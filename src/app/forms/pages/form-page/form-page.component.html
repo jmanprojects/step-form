@@ -1,0 +1,22 @@
+<div class="row container-box-form">
+    <div class="col-12 col-md-12 box-title">
+        <h2><b>Personal info</b></h2>
+        <p>Please provide your name, email, address, and phone number</p>
+    </div>
+    <div class="col-12 box-form"> 
+      <form-personal-info [sendResp]="formStatus" (formValues)="getForm($event)"></form-personal-info>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-4 div-steps">
+    <div class="row vw-1 justify-content-between">
+      <div class="col-4"> 
+        <!--  <button class="btn btn-secondary">Go Back</button> -->
+      </div>
+      <div class="col-4">
+          <button class="btn" style="background-color: hsl(213, 96%, 18%); color: #fff;" (click)="nextPage()">Next step</button>
+      </div>
+    </div>
+  </div>
+</div>

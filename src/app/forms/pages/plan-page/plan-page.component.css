@@ -1,0 +1,57 @@
+p{
+    font-size: 16px;
+    color: hsl(231, 11%, 63%);
+}
+
+h2 {
+    color: hsl(213, 96%, 18%);
+}
+
+.container-box-form{
+    position: absolute;
+    top: 15%;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.box-title{
+    padding: 5% 5% 3% 5%;
+}
+
+.box-form{
+    padding: 2% 5% 3%  5%;
+}
+
+.div-steps{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    padding: 5%;
+}
+
+@media only screen and (min-width: 768px){
+  
+    .container-box-form {
+        position: relative;
+        top: 0;
+    }
+
+    .box-title{
+        padding: 1% 10% 0 12%;
+    }
+    
+    .box-form{
+        padding: 1% 5% 3% 5%;
+    }
+
+    .div-steps{
+        position: absolute;
+        bottom: 22%;
+        left: 45%;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 1%;
+    }
+}

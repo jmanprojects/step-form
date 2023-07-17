@@ -1,0 +1,80 @@
+.item-button{
+    border: 1px solid  rgba(130, 140, 145, 0.418);
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+}
+
+.text-button{
+    margin-left: 10px;
+}
+
+.switch-container{
+    background-color: hsl(229, 24%, 87%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-switch{
+    width: 50px;
+    height: auto;
+    background-color: hsl(213, 96%, 18%);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.switch{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 1em;
+}
+
+h5{
+    cursor: pointer;
+}
+
+.selectedPlan{
+    background-color: hsl(229, 24%, 87%);
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
+.selectedPeriod1{
+    margin-left: 0;
+    transition: 0.5s;
+}
+.selectedPeriod2{
+    margin-left: 58%;
+    transition: 0.5s;
+}
+
+.colorH5{
+   color:hsl(231, 11%, 63%);
+}
+
+@media only screen and (min-width: 768px){
+    .item-button{
+        border: 1px solid  rgba(130, 140, 145, 0.418);
+        border-radius: 10px;
+        display: grid;
+        padding: 15%;
+        cursor: pointer;
+    }
+    .text-button{
+        margin: 25% 0 0 0;
+    }
+
+    .selectedPlan{
+        background-color: hsl(229, 24%, 87%);
+        border: 1px solid hsl(243, 100%, 62%);
+    }
+    
+}
+
+ 

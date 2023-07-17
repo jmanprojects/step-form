@@ -1,0 +1,24 @@
+ul{
+    list-style: none;
+}
+
+.table-user{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: hsl(217, 100%, 97%);
+}
+
+
+.totalPrice{
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px){
+  
+    .totalPrice{
+        margin-right: 50px;
+        padding-right: 60px;
+    }
+}

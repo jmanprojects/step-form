@@ -1,0 +1,34 @@
+<div class="row" >
+    <div class="col-12 d-flex">
+        <table class=" table-user">
+            <tbody>
+                <tr>
+                    <td style="padding: 20px;">
+                        <h6 style="color: hsl(213, 96%, 18%);"><b> {{planUser.plan}} ({{wordPeriodicity}})</b></h6>
+                        <p style="color: hsl(231, 11%, 63%); cursor: pointer;" (click)="changePeriodicity()"> <u>Change</u> </p></td>
+                    <td style="color: hsl(213, 96%, 18%);"><b>{{periodicityUser | currency: 'USD'}} {{wordPrice}} 
+                    </b> </td>
+                </tr>
+                <hr style="width: 130%;">
+                <tr *ngFor="let add of addsUser">
+                    <td style="padding: 20px;">
+                       {{add.name}}
+                    </td>
+                    <td  style="color: hsl(213, 96%, 18%); padding: 10px;">
+                      {{add.price | currency: 'USD'}} {{wordPrice}} 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <ul>
+            <li class="totalPrice">
+                <span class="float-start">Total pear({{wordPeriodicity}})</span>
+                <span class="float-end" style="color: hsl(243, 100%, 62%); font-size: 20px;"><b>{{ total | currency: 'USD'}} {{wordPrice}} </b> </span>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.google.com/specimen/Ubuntu');
+.congratulation-div{
+    width: 100%; 
+    height: 80%; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.congratulation-div p{
+    font-size: 16px;
+    color: hsl(231, 11%, 63%);
+}
+
+.congratulation-div h2 {
+    color: hsl(213, 96%, 18%);
+}
+
+
+.container-box-form{
+    position: absolute;
+    top: 15%;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.box-title{
+    padding: 5% 5% 3% 5%;
+}
+
+.box-form{
+    padding: 2% 5% 3%  5%;
+}
+
+.div-steps{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    padding: 5%;
+}
+
+@media only screen and (min-width: 768px){
+  
+    .container-box-form {
+        position: relative;
+        top: 0;
+    }
+
+    .box-title{
+        padding: 1% 10% 0 12%;
+    }
+    
+    .box-form{
+        padding: 1% 5% 3% 5%;
+    }
+
+    .div-steps{
+        position: absolute;
+        bottom: 22%;
+        left: 45%;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 1%;
+    }
+
+
+    .congratulation-div{
+        margin-top: 20%;
+        width: 100%; 
+        height: 80%; 
+        padding: 10px; 
+        text-align: center;
+    }
+}

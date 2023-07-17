@@ -1,0 +1,48 @@
+<div class="form-box" [formGroup]="userForm" >
+    <label for="name" class="form-label mt-1">Name</label>
+    <span *ngIf="userForm.controls['name'].getError('required') && userForm.controls['name'].touched || userForm.controls['name'].getError('required') && sendResp == 1" class="form-text text-danger float-end">
+        This field is required
+    </span>
+    <span *ngIf="userForm.controls['name'].getError('minlength')" class="form-text text-danger float-end">
+        Min 3 characters
+    </span>
+    <input
+        (keyup)="datas()"
+        formControlName="name" 
+        class="form-control mb-1" 
+        type="text" placeholder="e.g. Stephen King">
+        <br>
+    <label for="email" class="form-label mt-1">Email Address</label>
+    <span *ngIf="userForm.controls['email'].getError('required') && userForm.controls['email'].touched || userForm.controls['email'].getError('required') && sendResp == 1" class="form-text text-danger float-end">
+        This field is required
+    </span>
+    <span *ngIf="userForm.controls['email'].getError('email')" class="form-text text-danger float-end">
+        Email format please
+    </span>
+    <input
+        (keyup)="datas()"
+        formControlName="email" 
+        class="form-control mb-1" 
+        type="email" 
+        placeholder="e.g. etephenking@lorem.com"
+        >
+        <br>
+
+    <label for="phone" class="form-label mt-1">Phone number</label>
+    <span *ngIf="userForm.controls['phone'].getError('required') && userForm.controls['phone'].touched || userForm.controls['phone'].getError('required') && sendResp == 1" class="form-text text-danger float-end">
+        This field is required
+    </span>
+    <span *ngIf="userForm.controls['phone'].getError('minlength')" class="form-text text-danger float-end">
+        Min 10 characters
+    </span>
+    <span *ngIf="userForm.controls['phone'].getError('maxlength')" class="form-text text-danger float-end">
+        Max 10 characters
+    </span>
+    <input
+        (keyup)="datas()"
+        formControlName="phone" 
+        class="form-control mb-1" 
+        type="" placeholder="e.g. +1 234 567 890">
+        
+
+</div>

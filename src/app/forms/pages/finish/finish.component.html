@@ -1,0 +1,40 @@
+<div class="row container-box-form" *ngIf=" prueba ===1 else congratulation">
+    <div class="col-12 col-md-12 box-title" >
+        <h2><b>Finishing up</b></h2>
+        <p>Double-check everything looks OK before confirming.</p>
+    </div>
+    <div class="col-12 col-md-12 box-form"> 
+        <forms-table></forms-table>
+    </div>
+</div>
+
+<ng-template #congratulation>
+    <div class="row container-box-form">
+        <div class="col-12 col-md-12 box-title" >
+            <div class="congratulation-div" >
+                <img src="assets/images/icon-thank-you.svg" alt="icon-thank-you" style="margin-bottom: 15px;">
+                <h2><b>Thank you!</b></h2>
+                <p>
+                    Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, 
+                    please feel free to email us at support@loremgaming.com.
+                </p>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<div class="row" *ngIf="prueba ===1">
+    <div class="col-12 col-md-4 div-steps">
+      <div class="row vw-1 justify-content-between">
+        <div class="col-4"> 
+          <button style="color: hsl(231, 11%, 63%);"
+            routerLink="/forms/pick-add"
+            class="btn"><b>Go Back</b> </button>
+        </div>
+        <div class="col-4" >
+            <button class="btn" style="background-color: hsl(243, 100%, 62%); color: #fff;" (click)="confirmForm()">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

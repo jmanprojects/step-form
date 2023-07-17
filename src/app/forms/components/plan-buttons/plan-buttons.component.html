@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-12 col-md-4" *ngFor="let plan of plans">
+       <div class="item-button" (click)="selectPlan(plan.id!)" #1 [class.selectedPlan]="selectedPlan === plan.id">
+        <img [src]="plan.icon" [alt]="plan.plan">
+        <div class="text-button">
+            <h4>{{plan.plan | titlecase}}</h4>
+            <p style="color: hsl(231, 11%, 63%);"> {{plan.periodicity![selectedPeriod!] | currency: 'USD'}} {{wordPeriodPayment}}</p>
+            <p *ngIf="selectedPeriod === 1">{{plan.offer}}</p>
+        </div>
+       </div> 
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12 col-md-12">
+        <div class="col-12 switch-container">
+            <h5 (click)="paymentPeriod(0)" [class.colorH5]="selectedPeriod === 1">Montly</h5>
+            <div class="container-switch">
+                <div class="switch" [class.selectedPeriod1]="selectedPeriod === 0" [class.selectedPeriod2]="selectedPeriod === 1">
+
+                </div>
+            </div>
+            <h5 (click)="paymentPeriod(1)" [class.colorH5]="selectedPeriod === 0">Yearly</h5>
+        </div>
+    </div>
+</div>

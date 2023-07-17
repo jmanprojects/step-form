@@ -1,0 +1,25 @@
+<div class="row container-box-form">
+    <div class="col-12 col-md-12 box-title" >
+        <h2><b>Pick add-ons</b></h2>
+        <p>Add-ons help enhance your gaming experience.</p>
+    </div>
+    <div class="col-12 col-md-12 box-form"> 
+        <forms-pick-buttons (addsEmit)="getAdds($event)"></forms-pick-buttons>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-md-4 div-steps">
+      <div class="row vw-1 justify-content-between">
+        <div class="col-4"> 
+          <button style="color: hsl(231, 11%, 63%);"
+            routerLink="/forms/plan-page"
+            class="btn"><b>Go Back</b></button>
+        </div>
+        <div class="col-4">
+            <button class="btn" style="background-color: hsl(213, 96%, 18%); color: #fff;" (click)="nextStep()">Next step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

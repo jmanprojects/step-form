@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12 col-md-12" *ngFor="let add of adds; let i = index ">
+       <div class="item-button" (click)="selectAdds(add.id)">
+        <div class="check-box-content">
+            <div class="check-box">
+                <span *ngIf="searchElement(add.id)" style="color: white;" class="material-symbols-outlined">done</span>
+            </div>
+        </div>
+        <div class="row  m-1" >
+            <div class="col-10">
+                <h5>{{add.name}}</h5>
+                <p style="font-size: 12px;"> {{add.description}}</p>
+            </div>
+            <div class="col-2">
+                <p class="float-end" style="font-size: 12px;">+$ {{add.price}}/mo</p>
+            </div>
+         </div>
+       </div> 
+    </div>
+</div>
