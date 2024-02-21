@@ -1,5 +1,5 @@
 ## Welcome! 👋
-![Design preview for the QR code component](form.jpg)
+![Design preview for the Step-form App](form.png)
 
 # StepFormApp
 
