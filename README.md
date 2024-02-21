@@ -1,5 +1,5 @@
 ## Welcome! 👋
-![Design preview for the Step-form App](form.png)
+![Design preview for the Step-form App](step.png)
 
 # StepFormApp
 
